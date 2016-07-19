@@ -30,18 +30,16 @@ Plugin 'vim-airline/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-if !has('gui_running')
-  set t_Co=256
-endif
-
-
 let g:airline_powerline_fonts=1
 let mapleader=','
 let g:NERDSpaceDelims = 1
 set laststatus=2
 set encoding=utf-8
+set t_Co=256
+set term=xterm-256color
+set termencoding=utf-8
 set number
+set backspace=2
 set guifont=Roboto\ Mono\ for\ Powerline\ 12
 
 " theme
