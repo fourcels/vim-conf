@@ -10,8 +10,17 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" git
 Plugin 'tpope/vim-fugitive'
+
+" colorschemes
 Plugin 'flazz/vim-colorschemes'
+
+" comment
+Plugin 'scrooloose/nerdcommenter'
+
+" tree view
+Plugin 'scrooloose/nerdtree'
 
 " vim-airline
 Plugin 'vim-airline/vim-airline'
@@ -26,8 +35,11 @@ if !has('gui_running')
   set t_Co=256
 endif
 
-set laststatus=2
+
 let g:airline_powerline_fonts=1
+let mapleader=','
+let g:NERDSpaceDelims = 1
+set laststatus=2
 set encoding=utf-8
 set number
 set guifont=Roboto\ Mono\ for\ Powerline\ 12
@@ -36,3 +48,8 @@ set guifont=Roboto\ Mono\ for\ Powerline\ 12
 syntax on
 set background=dark
 colorscheme luna
+
+
+" map
+map <C-\> :NERDTreeToggle<CR>
+map <C-_> <leader>c<space>
