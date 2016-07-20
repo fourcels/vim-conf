@@ -11,7 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " git
-Plugin 'tpope/vim-fugitive'
+" has issus in xfce-terminal generate garbage character ^[[>1;2802;0c
+" Plugin 'tpope/vim-fugitive'
 
 " colorschemes
 Plugin 'flazz/vim-colorschemes'
@@ -25,6 +26,9 @@ Plugin 'scrooloose/nerdtree'
 " vim-airline
 Plugin 'vim-airline/vim-airline'
 " Plugin 'vim-airline/vim-airline-themes'
+
+" tagbar
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,14 +44,21 @@ set term=xterm-256color
 set termencoding=utf-8
 set number
 set backspace=2
-set guifont=Roboto\ Mono\ for\ Powerline\ 12
+set guifont=Roboto\ Mono\ Medium\ for\ Powerline\ 12
+set tabstop=2 shiftwidth=2 expandtab
+set autoindent
+set listchars=tab:▸\ ,eol:¬,space:·
+set list
 
 " theme
 syntax on
 set background=dark
-colorscheme luna
+colorscheme hybrid
 
+" delete trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
 
 " map
-map <C-\> :NERDTreeToggle<CR>
-map <C-_> <leader>c<space>
+nmap <C-_> <leader>c<space>
+nnoremap <silent> <C-\> :NERDTreeToggle<CR>
+nnoremap <silent> <F9> :TagbarToggle<CR>
