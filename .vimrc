@@ -43,10 +43,13 @@ set t_Co=256
 set term=xterm-256color
 set termencoding=utf-8
 set number
+
 " scroll in vim
 set mouse=a
 " mac delete
 set backspace=2
+
+set ignorecase
 set guifont=Roboto\ Mono\ Medium\ for\ Powerline\ 12
 set tabstop=2 shiftwidth=2 expandtab
 set autoindent
