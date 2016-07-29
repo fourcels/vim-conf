@@ -33,6 +33,15 @@ Plugin 'majutsushi/tagbar'
 " auto-pairs
 Plugin 'jiangmiao/auto-pairs'
 
+" javascript
+Plugin 'pangloss/vim-javascript'
+
+" snippets
+Plugin 'honza/vim-snippets'
+
+" youcompleteme
+Plugin 'valloric/youcompleteme'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
