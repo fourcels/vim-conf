@@ -49,6 +49,7 @@ set mouse=a
 " mac delete
 set backspace=2
 
+set cursorline
 set ignorecase
 set guifont=Roboto\ Mono\ Medium\ for\ Powerline\ 12
 set tabstop=2 shiftwidth=2 expandtab
