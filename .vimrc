@@ -43,7 +43,7 @@ Plugin 'honza/vim-snippets'
 " Plugin 'valloric/youcompleteme'
 
 " neocomplete
-Plugin 'Shougo/neocomplete.vim'
+" Plugin 'Shougo/neocomplete.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,6 +52,8 @@ filetype plugin indent on    " required
 let g:airline_powerline_fonts=1
 let mapleader=','
 let g:NERDSpaceDelims = 1
+set incsearch
+set hlsearch
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
@@ -76,6 +78,8 @@ set listchars=tab:▸\ ,eol:¬,space:·
 syntax on
 set background=dark
 colorscheme hybrid
+" fix debian terminal remain bgcolor after exit vim
+hi Normal ctermbg=None
 
 " delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
