@@ -87,3 +87,15 @@ autocmd BufWritePre * :%s/\s\+$//e
 " map
 nmap <C-_> <leader>c<space>
 nnoremap <silent> <C-\> :NERDTreeToggle<CR>
+
+" line wrap
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
