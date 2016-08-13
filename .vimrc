@@ -85,7 +85,7 @@ hi Normal ctermbg=None
 autocmd BufWritePre * :%s/\s\+$//e
 
 " map
-nmap <C-_> <leader>c<space>
+map <C-_> <leader>c<space>
 nnoremap <silent> <C-\> :NERDTreeToggle<CR>
 
 " line wrap
