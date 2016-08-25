@@ -77,7 +77,7 @@ set autoindent
 " theme
 syntax on
 set background=dark
-colorscheme hybrid
+silent! colorscheme hybrid
 " fix debian terminal remain bgcolor after exit vim
 hi Normal ctermbg=None
 
