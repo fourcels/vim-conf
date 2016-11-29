@@ -82,7 +82,7 @@ silent! colorscheme hybrid
 hi Normal ctermbg=None
 
 " delete trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 
 " map
 map <C-_> <leader>c<space>
