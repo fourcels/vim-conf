@@ -34,10 +34,13 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
 
 " javascript
-Plugin 'pangloss/vim-javascript'
+" Plugin 'pangloss/vim-javascript'
 
 " snippets
 Plugin 'honza/vim-snippets'
+
+" yankring
+Plugin 'vim-scripts/YankRing.vim'
 
 " youcompleteme
 " Plugin 'valloric/youcompleteme'
