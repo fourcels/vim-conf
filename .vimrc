@@ -56,13 +56,14 @@ let g:airline_powerline_fonts=1
 let mapleader=','
 let g:NERDSpaceDelims = 1
 set incsearch
-set hlsearch
+" set hlsearch
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
-set term=xterm-256color
 set termencoding=utf-8
 set number
+" fix issue esc delay
+set ttimeoutlen=50
 
 " scroll in vim
 set mouse=a
