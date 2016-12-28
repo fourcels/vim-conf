@@ -65,8 +65,6 @@ set number
 " fix issue esc delay
 set ttimeoutlen=50
 
-" scroll in vim
-set mouse=a
 " mac delete
 set backspace=2
 
