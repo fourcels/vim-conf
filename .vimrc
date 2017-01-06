@@ -89,6 +89,7 @@ hi Normal ctermbg=None
 " map
 map <C-_> <leader>c<space>
 nnoremap <silent> <C-\> :NERDTreeToggle<CR>
+cnoremap W exe "silent w !sudo tee % >/dev/null" . "e"
 
 " line wrap
 nnoremap j gj
