@@ -33,8 +33,6 @@ Plugin 'vim-airline/vim-airline'
 " auto-pairs
 Plugin 'jiangmiao/auto-pairs'
 
-" javascript
-" Plugin 'pangloss/vim-javascript'
 
 " snippets
 Plugin 'honza/vim-snippets'
@@ -55,6 +53,8 @@ filetype plugin indent on    " required
 let g:airline_powerline_fonts=1
 let mapleader=','
 let g:NERDSpaceDelims = 1
+let g:NERDCustomDelimiters = { 'dnsmasq': { 'left': '#'} }
+
 set incsearch
 " set hlsearch
 set laststatus=2
@@ -81,7 +81,7 @@ syntax on
 set background=dark
 silent! colorscheme hybrid
 " fix debian terminal remain bgcolor after exit vim
-hi Normal ctermbg=None
+" hi Normal ctermbg=None
 
 " delete trailing whitespace
 " autocmd BufWritePre * :%s/\s\+$//e
