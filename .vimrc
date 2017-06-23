@@ -91,7 +91,6 @@ silent! colorscheme hybrid
 " map
 map <C-_> <leader>c<space>
 nnoremap <silent> <C-\> :NERDTreeToggle<CR>
-cnoremap W w !sudo tee >/dev/null %<CR>
 
 " line wrap
 nnoremap j gj
