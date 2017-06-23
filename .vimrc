@@ -73,6 +73,8 @@ set ignorecase
 set guifont=Roboto\ Mono\ Medium\ for\ Powerline\ 12
 set tabstop=2 shiftwidth=2 expandtab
 set autoindent
+set smartindent
+set pastetoggle=<F2>
 " set listchars=tab:▸\ ,eol:¬,space:·
 " set list
 
