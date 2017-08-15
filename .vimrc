@@ -56,7 +56,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDCustomDelimiters = { 'dnsmasq': { 'left': '#'} }
 
 set incsearch
-" set hlsearch
+set hlsearch
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
