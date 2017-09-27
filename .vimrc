@@ -51,7 +51,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 let g:airline_powerline_fonts=1
-let mapleader=','
+let mapleader=' '
 let g:NERDSpaceDelims = 1
 let g:NERDCustomDelimiters = { 'dnsmasq': { 'left': '#'} }
 
@@ -91,6 +91,8 @@ hi Normal ctermbg=None
 " map
 map <C-_> <leader>c<space>
 nnoremap <silent> <C-\> :NERDTreeToggle<CR>
+nnoremap <leader>n :nohl<CR>
+nnoremap <leader>w :w<CR>
 
 " line wrap
 nnoremap j gj
