@@ -50,11 +50,17 @@ Plugin 'vim-scripts/YankRing.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Nginx section
+autocmd BufRead,BufNewFile /etc/nginx/* setfiletype nginx
+autocmd BufRead,BufNewFile /usr/local/etc/nginx/* setfiletype nginx
+
 let g:airline_powerline_fonts=1
 let mapleader=' '
 let g:NERDSpaceDelims = 1
-let g:NERDCustomDelimiters = { 'dnsmasq': { 'left': '#'} }
+let g:NERDCommentEmptyLines = 1
+" let g:NERDDefaultAlign = 'left'
 
+set cms=#%s
 set incsearch
 " set hlsearch
 set laststatus=2
@@ -89,7 +95,9 @@ hi Normal ctermbg=None
 " autocmd BufWritePre * :%s/\s\+$//e
 
 " map
-map <C-_> <leader>c<space>
+map <C-_> <plug>NERDCommenterToggle
+imap <C-_> <plug>NERDCommenterInsert
+
 nnoremap <silent> <C-\> :NERDTreeToggle<CR>
 nnoremap <leader>n :nohl<CR>
 nnoremap <leader>w :w<CR>
