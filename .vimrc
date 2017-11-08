@@ -10,41 +10,18 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" git
-" has issus in xfce-terminal generate garbage character ^[[>1;2802;0c
-" Plugin 'tpope/vim-fugitive'
-
 " colorschemes
-Plugin 'flazz/vim-colorschemes'
+Plugin 'w0ng/vim-hybrid'
 
 " comment
 Plugin 'scrooloose/nerdcommenter'
 
-" tree view
-Plugin 'scrooloose/nerdtree'
-
 " vim-airline
 Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
-
-" tagbar
-" Plugin 'majutsushi/tagbar'
 
 " auto-pairs
 Plugin 'jiangmiao/auto-pairs'
 
-
-" snippets
-Plugin 'honza/vim-snippets'
-
-" yankring
-Plugin 'vim-scripts/YankRing.vim'
-
-" youcompleteme
-" Plugin 'valloric/youcompleteme'
-
-" neocomplete
-" Plugin 'Shougo/neocomplete.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,7 +35,6 @@ let g:airline_powerline_fonts=1
 let mapleader=' '
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
-" let g:NERDDefaultAlign = 'left'
 
 set cms=#%s
 set incsearch
@@ -89,7 +65,7 @@ syntax on
 set background=dark
 silent! colorscheme hybrid
 " fix debian terminal remain bgcolor after exit vim
-hi Normal ctermbg=None
+" hi Normal ctermbg=None
 
 " delete trailing whitespace
 " autocmd BufWritePre * :%s/\s\+$//e
