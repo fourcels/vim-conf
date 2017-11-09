@@ -65,7 +65,7 @@ syntax on
 set background=dark
 silent! colorscheme hybrid
 " fix debian terminal remain bgcolor after exit vim
-" hi Normal ctermbg=None
+hi Normal ctermbg=None
 
 " delete trailing whitespace
 " autocmd BufWritePre * :%s/\s\+$//e
