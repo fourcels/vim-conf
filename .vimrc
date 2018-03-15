@@ -22,6 +22,9 @@ Plugin 'vim-airline/vim-airline'
 " auto-pairs
 Plugin 'jiangmiao/auto-pairs'
 
+" vim-surround 
+Plugin 'tpope/vim-surround'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
