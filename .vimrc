@@ -92,3 +92,5 @@ vnoremap <Down> gj
 vnoremap <Up> gk
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
+nmap n :m +1<CR>
+nmap m :m -2<CR>
