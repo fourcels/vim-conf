@@ -35,7 +35,6 @@ autocmd BufRead,BufNewFile /etc/nginx/* setfiletype nginx
 autocmd BufRead,BufNewFile /usr/local/etc/nginx/* setfiletype nginx
 
 let g:airline_powerline_fonts=1
-let mapleader=' '
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 
