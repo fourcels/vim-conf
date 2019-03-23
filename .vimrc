@@ -66,8 +66,8 @@ set pastetoggle=<F2>
 
 " theme
 syntax on
-silent! colorscheme one
 set background=dark
+silent! colorscheme one
 
 " map
 map <C-_> <plug>NERDCommenterToggle
