@@ -11,7 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " colorschemes
-Plugin 'w0ng/vim-hybrid'
+" Plugin 'w0ng/vim-hybrid'
+Plugin 'rakr/vim-one'
 
 " comment
 Plugin 'scrooloose/nerdcommenter'
@@ -34,7 +35,7 @@ filetype plugin indent on    " required
 autocmd BufRead,BufNewFile /etc/nginx/* setfiletype nginx
 autocmd BufRead,BufNewFile /usr/local/etc/nginx/* setfiletype nginx
 
-let g:airline_powerline_fonts=1
+" let g:airline_powerline_fonts=1
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 
@@ -49,12 +50,13 @@ set number
 " fix issue esc delay
 set ttimeoutlen=50
 
+set mouse=a
+
 " mac delete
 set backspace=2
 
 set cursorline
 set ignorecase
-set guifont=Roboto\ Mono\ Medium\ for\ Powerline:h14
 set tabstop=2 shiftwidth=2 expandtab
 set autoindent
 set smartindent
@@ -64,13 +66,8 @@ set pastetoggle=<F2>
 
 " theme
 syntax on
+silent! colorscheme one
 set background=dark
-silent! colorscheme hybrid
-" fix debian terminal remain bgcolor after exit vim
-hi Normal ctermbg=None
-
-" delete trailing whitespace
-" autocmd BufWritePre * :%s/\s\+$//e
 
 " map
 map <C-_> <plug>NERDCommenterToggle
