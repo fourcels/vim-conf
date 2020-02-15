@@ -50,7 +50,7 @@ set number
 " fix issue esc delay
 set ttimeoutlen=50
 
-" set mouse=a
+set mouse=a
 
 " mac delete
 set backspace=2
