@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'rakr/vim-one'
 
 " comment
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'preservim/nerdcommenter'
 
 " vim-airline
 Plugin 'vim-airline/vim-airline'
@@ -70,10 +70,9 @@ set background=dark
 silent! colorscheme one
 
 " map
-map <C-_> <plug>NERDCommenterToggle
-imap <C-_> <plug>NERDCommenterInsert
+map <C-/> <plug>NERDCommenterToggle
+imap <C-/> <plug>NERDCommenterInsert
 
-nnoremap <silent> <C-\> :NERDTreeToggle<CR>
 nnoremap <leader>n :nohl<CR>
 nnoremap <leader>w :w<CR>
 
