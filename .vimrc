@@ -11,8 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " colorschemes
-" Plugin 'w0ng/vim-hybrid'
-Plugin 'rakr/vim-one'
+" Plugin 'rakr/vim-one'
+Plugin 'cocopon/iceberg.vim'
 
 " comment
 Plugin 'preservim/nerdcommenter'
@@ -31,9 +31,6 @@ Plugin 'tpope/vim-surround'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Nginx section
-autocmd BufRead,BufNewFile /etc/nginx/* setfiletype nginx
-autocmd BufRead,BufNewFile /usr/local/etc/nginx/* setfiletype nginx
 
 " let g:airline_powerline_fonts=1
 let g:NERDSpaceDelims = 1
@@ -67,7 +64,7 @@ set pastetoggle=<F2>
 " theme
 syntax on
 set background=dark
-silent! colorscheme one
+silent! colorscheme iceberg
 
 " map
 map <C-/> <plug>NERDCommenterToggle
