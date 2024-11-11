@@ -11,8 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " colorschemes
-" Plugin 'rakr/vim-one'
-Plugin 'cocopon/iceberg.vim'
+Plugin 'tomasiser/vim-code-dark'
 
 " comment
 Plugin 'preservim/nerdcommenter'
@@ -23,48 +22,46 @@ Plugin 'vim-airline/vim-airline'
 " auto-pairs
 Plugin 'jiangmiao/auto-pairs'
 
-" vim-surround 
+" vim-surround
 Plugin 'tpope/vim-surround'
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 
-" let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 
 set cms=#%s
 set incsearch
-" set hlsearch
+set hlsearch
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
 set termencoding=utf-8
 set number
-" fix issue esc delay
 set ttimeoutlen=50
 
-" set mouse=a
+set mouse=a
 
 " mac delete
 set backspace=2
 
 set cursorline
 set ignorecase
-set tabstop=2 shiftwidth=2 expandtab
+set tabstop=4 shiftwidth=4 expandtab
 set autoindent
 set smartindent
 set pastetoggle=<F2>
-" set listchars=tab:▸\ ,eol:¬,space:·
-" set list
+set listchars=tab:▸\ ,eol:¬,space:·
+set list
 
 " theme
 syntax on
 set background=dark
-silent! colorscheme iceberg
+silent! colorscheme codedark
 
 " map
 map <C-/> <plug>NERDCommenterToggle
